@@ -77,28 +77,28 @@ public class SimonSays extends JFrame implements ActionListener {
         timer.start();
     }
 
-//    @Override
-//    public void actionPerformed(ActionEvent e) {
-//        if (!playerTurn) return;
-//
-//        for (int i = 0; i < 4; i++) {
-//            if (e.getSource() == buttons[i]) {
-//                if (i == sequence.get(step)) {
-//                    step++;
-//                    if (step == sequence.size()) {
-//                        addToSequence();
-//                        showSequence();
-//                    }
-//                } else {
-//                    JOptionPane.showMessageDialog(this, "Wrong! Game Over!");
-//                    startNewGame();
-//                }
-//                return;
-//            }
-//        }
-//    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (!playerTurn) return;
 
-//    public static void main(String[] args) {
-//        new SimonSays();
-//    }
+        for (int i = 0; i < 4; i++) {
+            if (e.getSource() == buttons[i]) {
+                if (i == sequence.get(step)) {
+                    step++;
+                    if (step == sequence.size()) {
+                        addToSequence();
+                        showSequence();
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(this, "Wrong! Game Over!");
+                    startNewGame();
+                }
+                return;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        new SimonSays();
+    }
 }
