@@ -39,43 +39,43 @@ public class SimonSays extends JFrame implements ActionListener {
         setLocationRelativeTo(null);
     }
 
-//    private void startNewGame() {
-//        sequence.clear();
-//        addToSequence();
-//        showSequence();
-//    }
+    private void startNewGame() {
+        sequence.clear();
+        addToSequence();
+        showSequence();
+    }
 
-//    private void addToSequence() {
-//        sequence.add(random.nextInt(4));
-//    }
+    private void addToSequence() {
+        sequence.add(random.nextInt(4));
+    }
 
-//    private void showSequence() {
-//        playerTurn = false;
-//        index = 0;
-//
-//        timer = new Timer(1000, new ActionListener() {
-//            public void actionPerformed(ActionEvent e) {
-//                if (index < sequence.size()) {
-//                    int btnIndex = sequence.get(index);
-//                    buttons[btnIndex].setBackground(Color.WHITE);
-//
-//                    new Timer(500, new ActionListener() {
-//                        public void actionPerformed(ActionEvent e) {
-//                            buttons[btnIndex].setBackground(buttonColors[btnIndex]);
-//                        }
-//                    }).setRepeats(false);
-//
-//                    index++;
-//                } else {
-//                    timer.stop();
-//                    playerTurn = true;
-//                }
-//            }
-//        });
-//
-//        timer.setRepeats(true);
-//        timer.start();
-//    }
+    private void showSequence() {
+        playerTurn = false;
+        index = 0;
+
+        timer = new Timer(1000, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (index < sequence.size()) {
+                    int btnIndex = sequence.get(index);
+                    buttons[btnIndex].setBackground(Color.WHITE);
+
+                    new Timer(500, new ActionListener() {
+                        public void actionPerformed(ActionEvent e) {
+                            buttons[btnIndex].setBackground(buttonColors[btnIndex]);
+                        }
+                    }).setRepeats(false);
+
+                    index++;
+                } else {
+                    timer.stop();
+                    playerTurn = true;
+                }
+            }
+        });
+
+        timer.setRepeats(true);
+        timer.start();
+    }
 
 //    @Override
 //    public void actionPerformed(ActionEvent e) {
