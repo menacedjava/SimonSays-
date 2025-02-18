@@ -9,15 +9,15 @@ import java.util.Random;
 import java.util.TimerTask;
 
 public class SimonSays extends JFrame implements ActionListener {
-//    private JButton[] buttons = new JButton[4];
-//    private String[] colors = {"Red", "Green", "Blue", "Yellow"};
-//    private Color[] buttonColors = {Color.RED, Color.GREEN, Color.BLUE, Color.YELLOW};
-//    private ArrayList<Integer> sequence = new ArrayList<>();
-//    private int step = 0;
-//    private boolean playerTurn = false;
-//    private Random random = new Random();
-//    private Timer timer;
-//    private int index = 0;
+    private JButton[] buttons = new JButton[4];
+    private String[] colors = {"Red", "Green", "Blue", "Yellow"};
+    private Color[] buttonColors = {Color.RED, Color.GREEN, Color.BLUE, Color.YELLOW};
+    private ArrayList<Integer> sequence = new ArrayList<>();
+    private int step = 0;
+    private boolean playerTurn = false;
+    private Random random = new Random();
+    private Timer timer;
+    private int index = 0;
 
 //    public SimonSays() {
 //        setTitle("Simon Says");
