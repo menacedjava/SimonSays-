@@ -19,25 +19,25 @@ public class SimonSays extends JFrame implements ActionListener {
     private Timer timer;
     private int index = 0;
 
-//    public SimonSays() {
-//        setTitle("Simon Says");
-//        setSize(400, 500);
-//        setLayout(new GridLayout(2, 2));
-//        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//
-//        for (int i = 0; i < 4; i++) {
-//            buttons[i] = new JButton();
-//            buttons[i].setBackground(buttonColors[i]);
-//            buttons[i].setOpaque(true);
-//            buttons[i].setBorderPainted(false);
-//            buttons[i].addActionListener(this);
-//            add(buttons[i]);
-//        }
-//
-//        startNewGame();
-//        setVisible(true);
-//        setLocationRelativeTo(null);
-//    }
+    public SimonSays() {
+        setTitle("Simon Says");
+        setSize(400, 500);
+        setLayout(new GridLayout(2, 2));
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        for (int i = 0; i < 4; i++) {
+            buttons[i] = new JButton();
+            buttons[i].setBackground(buttonColors[i]);
+            buttons[i].setOpaque(true);
+            buttons[i].setBorderPainted(false);
+            buttons[i].addActionListener(this);
+            add(buttons[i]);
+        }
+
+        startNewGame();
+        setVisible(true);
+        setLocationRelativeTo(null);
+    }
 
 //    private void startNewGame() {
 //        sequence.clear();
